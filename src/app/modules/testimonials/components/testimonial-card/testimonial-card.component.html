@@ -1,0 +1,15 @@
+<div class="testimonial-card">
+  <div class="testimonial-card-header">
+    <img [src]="testimonial?.profilePictureUrl" alt="profile picture" class="testimonial-card-picture">
+    <div class="testimonial-header-data">
+      <p class="testimonial-card-title">{{testimonial?.fullname}}</p>
+      <p class="testimonial-card-subtitle">{{testimonial?.job}}</p>
+    </div>
+    <img [src]="testimonial?.companyLogoUrl" alt="profile picture" class="testimonial-card-picture">
+  </div>
+  <p class="testimonial-card-content">{{testimonial?.content}}</p>
+  <div class="testimonial-card-footer">
+    <p class="testimonial-card-subtitle">{{testimonial?.publishDate | date: 'dd/MM/yyyy - h:mm a'}}</p>
+    <p class="testimonial-card-acent-900">{{testimonial?.category}}</p>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+@import "../../../../../assets/styles/vars";
+
+.modal-newsletter-container{
+  padding: 10px 40px;
+}
+.modal-title{
+  font-family: $font_title;
+  color: $black_high_emphasis;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 29px;
+  padding: 20px;
+  text-align: center;
+  span{
+    color: $color_accent_600;
+  }
+}
+
+mat-form-field{
+  width: 100%;
+  & ::ng-deep .mat-form-field-flex {
+    background-color: white !important;
+    padding: 0;
+  }
+  & ::ng-deep .mat-form-field-label{
+    color: $black_high_emphasis;
+  }
+}
+
+button::ng-deep .mat-button-wrapper{
+  padding: 50px;
+}
+
+.centered{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.policy-info{
+  margin-top: 20px;
+  color: $black_inactive;
+  font-family: $font-text;
+  font-size: 12px;
+}

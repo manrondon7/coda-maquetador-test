@@ -1,0 +1,10 @@
+<div class="carousel-container">
+  <owl-carousel-o [options]="carouselOptions">
+    <ng-template carouselSlide *ngFor="let item of testimonials">
+      <div class="card-container">
+        <app-testimonial-card [testimonial]="item"></app-testimonial-card>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+  <div class="carousel-background"></div>
+</div>

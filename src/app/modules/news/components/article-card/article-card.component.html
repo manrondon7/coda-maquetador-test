@@ -1,0 +1,16 @@
+<div class="article-card-container">
+  <div class="article-info-container">
+    <div class="article-title">{{article.title}}</div>
+    <div class="article-content">{{article.content}}</div>
+    <div class="article-footer">
+      <p class="article-date"> {{article?.publishDate | date: 'MMMM dd, yyyy'}} </p>
+      <div class="article-user">
+        <img [src]="article.profilePictureUrl" alt="User picture" class="article-user-picture">
+        <p class="article-user-name">{{article.userName}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-picture-container">
+    <img [src]="article.articlePictureUrl" alt="Article picture" class="article-picture">
+  </div>
+</div>

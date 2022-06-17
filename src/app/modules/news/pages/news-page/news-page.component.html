@@ -1,0 +1,28 @@
+<app-testimonials-page></app-testimonials-page>
+<div class="separator"></div>
+<div class="news-page-container">
+  <h1 class="page-title">Latest News</h1>
+
+  <div class="filters-container">
+    <div class="primary-filter">
+      <app-filters-search></app-filters-search>
+    </div>
+    <div class="secondary-filter">
+      <app-filters-select [options]="languageSelectOtions" [placeholder]="'Language'"></app-filters-select>
+    </div>
+    <div class="secondary-filter">
+      <app-filters-select [options]="courseSelectOtions" [placeholder]="'Course'"></app-filters-select>
+    </div>
+  </div>
+
+  <div class="news-section">
+    <div class="articles-container">
+      <app-article-card *ngFor="let item of articles" [article]="item"></app-article-card>
+    </div>
+    <div class="sponsor-container">
+      <div class="sponsor">
+        <p>Subscribe Newsletter</p>
+      </div>
+    </div>
+  </div>
+</div>
